@@ -5,7 +5,7 @@ background-attachment: black;
 #container{
     windows:1000px;
     height: 550px;
-    background-image: linear-gradient(rgba(255, 0, 0, 0.3),rgba(0, 255, 0, 0.3)),url(bgImg.jpg);
+    background-image: linear-gradient(rgba(77, 9, 9, 0.3),rgba(22, 19, 48, 0.3)),url(bgImg.jpg);
     margin: 20px auto;
 }
 #calculator{
@@ -17,4 +17,65 @@ background-attachment: black;
     position: relative;
     border-radius: 5px;
     box-shadow: yellowgreen;
+}
+#result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: whitesmoke;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: tomato;
+}button:nth-child(8){
+    font-size: 20px;
+    background-color: olive;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: blue;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: orange;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: yellow;
 }
