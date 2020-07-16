@@ -63,9 +63,9 @@ for(var i=0;i<operator.length;i++){
                     printOutput("");
                 }
             }
-        }
-    });
-}
+        });
+    }
+
 var number=document.getElementsByClassName("number");
 for(var i=0;i<number.length;i++){
     number[i].addEventListener('click',function(){
